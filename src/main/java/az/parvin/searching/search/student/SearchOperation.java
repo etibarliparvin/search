@@ -1,4 +1,4 @@
-package az.parvin.searching.search;
+package az.parvin.searching.search.student;
 
 public enum SearchOperation {
     GREATER_THAN,
@@ -12,8 +12,9 @@ public enum SearchOperation {
     MATCH_END,
     IN,
     BETWEEN_DATE,
-    //    BETWEEN_SALARY,
+    BETWEEN_SCHOLARSHIP,
     NOT_IN,
-//    JOIN_ADDRESS,
-//    JOIN_JOB_DETAILS
+    JOIN_ADDRESS,
+    JOIN_BOOKS,
+    JOIN_TEACHERS
 }

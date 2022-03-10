@@ -1,4 +1,4 @@
-package az.parvin.searching.search;
+package az.parvin.searching.search.student;
 
 import lombok.Data;
 
@@ -15,7 +15,8 @@ public class SearchFilter {
     private String pinCode;
     private Double gpa;
     private LocalDate birthdate;
-    private BigDecimal scholarship;
+    private BigDecimal minScholarship;
+    private BigDecimal maxScholarship;
     private String country;
     private String city;
     private String addressLine;

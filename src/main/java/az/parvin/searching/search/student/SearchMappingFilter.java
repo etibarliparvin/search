@@ -1,4 +1,4 @@
-package az.parvin.searching.search;
+package az.parvin.searching.search.student;
 
 import org.springframework.stereotype.Component;
 import org.springframework.util.ObjectUtils;
@@ -17,7 +17,8 @@ public class SearchMappingFilter {
             String pinCode,
             Double gpa,
             LocalDate birthdate,
-            BigDecimal scholarship,
+            BigDecimal minScholarship,
+            BigDecimal maxScholarship,
             String country,
             String city,
             String addressLine,
@@ -42,8 +43,10 @@ public class SearchMappingFilter {
             filter.setGpa(gpa);
         if (!ObjectUtils.isEmpty(birthdate))
             filter.setBirthdate(birthdate);
-        if (!ObjectUtils.isEmpty(scholarship))
-            filter.setScholarship(scholarship);
+        if (!ObjectUtils.isEmpty(minScholarship))
+            filter.setMinScholarship(minScholarship);
+        if (!ObjectUtils.isEmpty(maxScholarship))
+            filter.setMaxScholarship(maxScholarship);
         if (!ObjectUtils.isEmpty(country))
             filter.setCountry(country);
         if (!ObjectUtils.isEmpty(city))
